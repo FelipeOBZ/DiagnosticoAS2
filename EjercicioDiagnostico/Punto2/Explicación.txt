@@ -1,0 +1,7 @@
+Los dos atributos más importante son:
+
+-Disponibilidad: Ya que un percance medico no conoce de horarios, nuestro aplicativo debe de estar disponible siempre que el usuario lo requiera, y a su vez contar con el personal necesario que pueda atender a su solicitud si ese es el caso.
+
+-Usabilidad: El rango de edades de personas que pueden llegar a necesitar algún servicio médico está entre los 0 y +100 años, por lo tanto, el sistema debe de ser lo más intuitivo y fácil de manipular posible, permitiendo que cualquier persona pueda acceder a el y entender en un instante su funcionamiento.
+
+Para el punto de escenarios arquitectónicos, entiendo el concepto y la finalidad pero no trabajé ese tema en arquitectura de software I, sin embargo, investigando podría realizar dicho punto.

@@ -1,0 +1,8 @@
+¿Qué principios SOLID han sido violados y cuál es su reperción?
+
+R/ Se viola el principio de responsabilidad unica, ya que podemos evidenciar que las
+clases PremiunVideoStorage y VideoStorage realizan la misma función dentro del sistema, pudiendo tener una sola clase que realice esta función. Se viola a su vez el Principio de Inversión de Dependencias, ya que vemos como los métodos de la clase StreamingService, como lo son PlayVideo y AddVideo, dependen de las clases VideoPlayer, VideoStorage y PremiunVideoStorage respectivamente en vez de depender de una interfaz única que agrupe los métodos de estás clases y que la clase StreamingService pueda implementar, garantizando de que si alguna de las clases  VideoPlayer, VideoStorage y PremiunVideoStorage cambian, la clase StreamingService no se vea afectada de forma directa, facilitando la mantenibilidad del código.
+
+Las repercusiones del código actual son que, si por x o y motivo, las clases de las que depende
+StreamingService cambian o son eliminadas, mi servicio va a dejar de funcionar, y debo de ir a modificarlo a él directamente, dificultando el proceso de mantenimiento, ya que pueden haber muchos más servicios que dependan de esas clases.
+ 
